@@ -2,17 +2,19 @@
   "name": "base-express-backend",
   "version": "1.0.0",
   "description": "",
+  "bin":"./bin/cli.js",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon --exec ts-node ./src/index.ts",
+    "dev": "cross-env NODE_ENV=development nodemon --exec ts-node ./src/app.ts",
     "build": "rimraf ./build && tsc --skipLibCheck",
-    "start": "cross-env NODE_ENV=production node ./build/index.js"
+    "start": "cross-env NODE_ENV=production node ./build/app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
