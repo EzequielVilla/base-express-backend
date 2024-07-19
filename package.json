@@ -1,8 +1,8 @@
 {
   "name": "base-express-backend",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
-  "bin":{
+  "bin": {
     "base-express-backend": "./bin/cli.mjs"
   },
   "main": "index.js",
