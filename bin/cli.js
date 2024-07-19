@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const inquirer = require("inquirer");
-const { execSync } = require("child_process");
+import inquirer from "inquirer";
+import { execSync } from "child_process";
 
 const runCommand = (command) => {
   try {
