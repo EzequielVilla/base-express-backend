@@ -21,9 +21,9 @@ const questions = [
   },
 ];
 
-const installInquirer = `npm install inquirer`;
-const inquirerInstalled = runCommand(installInquirer);
-if (!inquirerInstalled) process.exit(-1);
+// const installInquirer = `npm install inquirer`;
+// const inquirerInstalled = runCommand(installInquirer);
+// if (!inquirerInstalled) process.exit(-1);
 // const gitCloneCommand = `git clone --depth 1 https://github.com/EzequielVilla/base-express-backend ${projectName}`;
 
 inquirer
