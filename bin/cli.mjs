@@ -7,7 +7,7 @@ const runCommand = (command) => {
   try {
     execSync(command, { stdio: "inherit" });
   } catch (error) {
-    console.error(`Failed to execute ${command}`, e);
+    console.error(`Failed to execute ${command}`, error);
     return false;
   }
   return true;
