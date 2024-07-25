@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon --exec ts-node ./src/app.ts",
     "build": "rimraf ./build && tsc --skipLibCheck",
+    "sync:force": "ts-node ./src/lib/db/sync.ts --force",
+    "sync:alter": "ts-node ./src/lib/db/sync.ts --alter",
+
     "start": "cross-env NODE_ENV=production node ./build/app.js"
   },
   "author": "",
@@ -14,7 +17,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "sequelize": "^6.37.3"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
