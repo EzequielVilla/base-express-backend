@@ -1,10 +1,6 @@
 node_modules
 build
-.env.local
-.env.postgres
-logs
 .husky
-.TEST_DOC
 coverage
 .nyc_output
 .vscode
