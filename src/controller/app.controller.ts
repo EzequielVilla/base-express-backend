@@ -11,7 +11,7 @@ export class AppController {
       res.status(201).json(responseHandler(true, "SUCCESS", response));
     } catch (error) {
       console.error(error);
-      res.status(400).send(responseHandler(false, error.message, error));
+      res.status(400).send(responseHandler(false, error.message));
     }
   };
 }
